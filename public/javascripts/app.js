@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
     circles.innerHTML = '';
   });
 
-  socket.on('update-players', function(data) {
+  socket.on('update-player-list', function(data) {
     var playerList = '<li>' + data.join('</li><li>') + '</li>';
     players.innerHTML = playerList;
   });
